@@ -1,0 +1,31 @@
+<?php
+$title = 'Add new album';
+$this->headTitle($title);
+?>
+<h1><?= $this->escapeHtml($title) ?></h1>
+<?php
+echo $error ? '<div class="alert alert-danger" role="alert">Invalid data in form!</div>' : '';
+?>
+<?php
+$form->setAttribute('action', $this->url('album', ['action' => 'add']));
+$form->prepare();
+
+echo $this->form()->openTag($form);
+?>
+
+<div class="form-group">
+    <?= $this->formLabel($form->get('title')) ?>
+    <?= $this->formElement($form->get('title')) ?>
+    <?= $this->formElementErrors()->render($form->get('title'), ['class' => 'list-unstyled alert alert-warning']) ?>
+</div>
+
+<div class="form-group">
+    <?= $this->formLabel($form->get('artist')) ?>
+    <?= $this->formElement($form->get('artist')) ?>
+    <?= $this->formElementErrors()->render($form->get('artist'), ['class' => 'list-unstyled alert alert-warning']) ?>
+</div>
+
+<?php
+echo $this->formSubmit($form->get('submit'));
+echo $this->formHidden($form->get('id'));
+echo $this->form()->closeTag();

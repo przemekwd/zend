@@ -1,0 +1,2 @@
+ENABLE/DISABLE development mode
+	vendor\bin\zf-development-mode {enable|disable}
