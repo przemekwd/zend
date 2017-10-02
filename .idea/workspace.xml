@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00851e54-ec6f-45ee-b53e-63c11069f580" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Album/src/Model/Artist.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Album/src/Model/ArtistTable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Album/config/module.config.php" afterPath="$PROJECT_DIR$/module/Album/config/module.config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Album/src/Module.php" afterPath="$PROJECT_DIR$/module/Album/src/Module.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Album/view/album/album/index.phtml" afterPath="$PROJECT_DIR$/module/Album/view/album/album/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/application/index/index.phtml" afterPath="$PROJECT_DIR$/module/Application/view/application/index/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" afterPath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Album/view/album/artist/add.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Album/view/album/artist/edit.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Album/view/album/artist/show.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Album/src/Controller/ArtistController.php" afterPath="$PROJECT_DIR$/module/Album/src/Controller/ArtistController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Album/src/Model/ArtistTable.php" afterPath="$PROJECT_DIR$/module/Album/src/Model/ArtistTable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Album/view/album/artist/index.phtml" afterPath="$PROJECT_DIR$/module/Album/view/album/artist/index.phtml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,30 +20,108 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Album/view/album/album/index.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="29" column="86" lean-forward="true" selection-start-line="29" selection-start-column="86" selection-end-line="29" selection-end-column="86" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/Album/view/album/artist/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+            <state relative-caret-position="204">
+              <caret line="12" column="84" lean-forward="false" selection-start-line="12" selection-start-column="84" selection-end-line="12" selection-end-column="84" />
+              <folding>
+                <marker date="1506946914173" expanded="true" signature="128:148" ph="..." />
+                <marker date="1506946914173" expanded="true" signature="724:867" ph="..." />
+                <marker date="1506946914173" expanded="true" signature="741:867" ph="..." />
+                <marker date="1506946914173" expanded="true" signature="788:867" ph="..." />
+                <marker date="1506946914173" expanded="true" signature="1394:1572" ph="..." />
+                <marker date="1506946914173" expanded="true" signature="1465:1572" ph="..." />
+                <marker date="1506946914173" expanded="true" signature="1486:1572" ph="..." />
+                <marker date="1506946914173" expanded="true" signature="1786:2056" ph="..." />
+                <marker date="1506946914173" expanded="true" signature="2077:2376" ph="..." />
+                <marker date="1506946914173" expanded="true" signature="2446:2475" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.phtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="39" column="47" lean-forward="false" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="module.config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Album/config/module.config.php">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArtistController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Album/src/Controller/ArtistController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+              <folding>
+                <element signature="e#36#64#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArtistTable.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Album/src/Model/ArtistTable.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+              <folding>
+                <element signature="e#31#62#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Select.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/zendframework/zend-db/src/Sql/Select.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="278" column="31" lean-forward="false" selection-start-line="278" selection-start-column="31" selection-end-line="278" selection-end-column="31" />
+              <folding>
+                <marker date="1506934687164" expanded="true" signature="1919:1940" ph="SELECT %1$s " />
+                <marker date="1506934687164" expanded="true" signature="2070:2096" ph="SELECT %1$s " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractTableGateway.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/zendframework/zend-db/src/TableGateway/AbstractTableGateway.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="180" column="7" lean-forward="true" selection-start-line="180" selection-start-column="7" selection-end-line="180" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Params.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/zendframework/zend-mvc/src/Controller/Plugin/Params.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="70" column="33" lean-forward="false" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -55,73 +131,9 @@
         <entry file="file://$PROJECT_DIR$/module/Album/src/Controller/AlbumController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="59" column="5" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
+              <caret line="113" column="14" lean-forward="true" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
               <folding>
                 <element signature="e#36#113#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArtistController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module/Album/src/Controller/ArtistController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-              <folding>
-                <element signature="e#36#64#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Artist.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Album/src/Model/Artist.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArtistTable.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Album/src/Model/ArtistTable.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Album.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Album/src/Model/Album.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" column="18" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="14" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Module.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Album/src/Module.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="43" column="64" lean-forward="true" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="64" />
-              <folding>
-                <element signature="e#1852#1858#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -147,15 +159,16 @@
         <option value="$PROJECT_DIR$/module/Album/src/Controller/AlbumController.php" />
         <option value="$PROJECT_DIR$/config/modules.config.php" />
         <option value="$PROJECT_DIR$/module/Album/view/album/album/index.phtml" />
-        <option value="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
         <option value="$PROJECT_DIR$/module/Application/view/application/index/index.phtml" />
-        <option value="$PROJECT_DIR$/public/css/index.css" />
         <option value="$PROJECT_DIR$/module/Album/config/module.config.php" />
-        <option value="$PROJECT_DIR$/module/Album/view/album/artist/index.phtml" />
         <option value="$PROJECT_DIR$/module/Album/src/Model/Artist.php" />
-        <option value="$PROJECT_DIR$/module/Album/src/Model/ArtistTable.php" />
         <option value="$PROJECT_DIR$/module/Album/src/Module.php" />
+        <option value="$PROJECT_DIR$/module/Album/view/album/artist/delete.phtml" />
+        <option value="$PROJECT_DIR$/public/css/index.css" />
         <option value="$PROJECT_DIR$/module/Album/src/Controller/ArtistController.php" />
+        <option value="$PROJECT_DIR$/module/Album/src/Model/ArtistTable.php" />
+        <option value="$PROJECT_DIR$/module/Album/view/album/artist/index.phtml" />
+        <option value="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
       </list>
     </option>
   </component>
@@ -166,7 +179,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1296" />
@@ -197,95 +210,28 @@
             <path>
               <item name="zend3" type="b2602c69:ProjectViewProjectNode" />
               <item name="zend3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="data" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="zend3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zend3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="data" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cache" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="zend3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zend3" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="zend3" type="b2602c69:ProjectViewProjectNode" />
               <item name="zend3" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Album" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="zend3" type="b2602c69:ProjectViewProjectNode" />
               <item name="zend3" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Album" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="zend3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zend3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Album" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="zend3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zend3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Album" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="zend3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zend3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Album" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Form" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="zend3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zend3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Album" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="zend3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zend3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Album" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="zend3" type="b2602c69:ProjectViewProjectNode" />
               <item name="zend3" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Album" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="album" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="zend3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zend3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Album" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="album" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="album" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="zend3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zend3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="module" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Album" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="album" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="artist" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layout" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -302,8 +248,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\zend3\public\css" />
       <recent name="C:\xampp\htdocs\zend3\module\Album\view\album\artist" />
+      <recent name="C:\xampp\htdocs\zend3\public\css" />
       <recent name="C:\xampp\htdocs\zend3\module" />
       <recent name="C:\xampp\htdocs\zend3\module\Artist" />
       <recent name="C:\xampp\htdocs\zend3\config\autoload" />
@@ -331,15 +277,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1506930811602</updated>
-      <workItem from="1506930814602" duration="9262000" />
+      <workItem from="1506930814602" duration="14220000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9262000" />
+    <option name="totallyTimeSpent" value="14220000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1010" extended-state="7" />
+    <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -502,24 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="130" column="17" lean-forward="true" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="43" column="64" lean-forward="true" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="64" />
-          <folding>
-            <element signature="e#1852#1858#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -552,28 +480,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Album/src/Controller/AlbumController.php">
+    <entry file="file://$PROJECT_DIR$/module/Album/src/Module.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="59" column="5" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="e#36#113#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Album/view/album/album/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" column="86" lean-forward="true" selection-start-line="29" selection-start-column="86" selection-end-line="29" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Album/view/album/artist/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        <state relative-caret-position="420">
+          <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -586,10 +496,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Album/src/Module.php">
+    <entry file="file://$PROJECT_DIR$/module/Album/view/album/album/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+        <state relative-caret-position="340">
+          <caret line="26" column="64" lean-forward="true" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zend-mvc/src/Controller/AbstractController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="34" column="3" lean-forward="false" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -602,21 +520,143 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Album/src/Model/ArtistTable.php">
+    <entry file="file://$PROJECT_DIR$/module/Album/view/album/artist/delete.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <caret line="16" column="63" lean-forward="false" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Album/view/album/album/delete.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Album/view/album/artist/edit.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Album/view/album/artist/show.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Album/view/album/artist/add.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Album/src/Controller/AlbumController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="113" column="14" lean-forward="true" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
+          <folding>
+            <element signature="e#36#113#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zend-mvc/src/Controller/Plugin/Params.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="70" column="33" lean-forward="false" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Album/src/Controller/ArtistController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        <state relative-caret-position="165">
+          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
           <folding>
             <element signature="e#36#64#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zend-db/src/TableGateway/AbstractTableGateway.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="180" column="7" lean-forward="true" selection-start-line="180" selection-start-column="7" selection-end-line="180" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zend-db/src/Sql/Select.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="278" column="31" lean-forward="false" selection-start-line="278" selection-start-column="31" selection-end-line="278" selection-end-column="31" />
+          <folding>
+            <marker date="1506934687164" expanded="true" signature="1919:1940" ph="SELECT %1$s " />
+            <marker date="1506934687164" expanded="true" signature="2070:2096" ph="SELECT %1$s " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Album/src/Model/ArtistTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+          <folding>
+            <element signature="e#31#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Album/view/album/artist/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="84" lean-forward="false" selection-start-line="12" selection-start-column="84" selection-end-line="12" selection-end-column="84" />
+          <folding>
+            <marker date="1506946914173" expanded="true" signature="128:148" ph="..." />
+            <marker date="1506946914173" expanded="true" signature="724:867" ph="..." />
+            <marker date="1506946914173" expanded="true" signature="741:867" ph="..." />
+            <marker date="1506946914173" expanded="true" signature="788:867" ph="..." />
+            <marker date="1506946914173" expanded="true" signature="1394:1572" ph="..." />
+            <marker date="1506946914173" expanded="true" signature="1465:1572" ph="..." />
+            <marker date="1506946914173" expanded="true" signature="1486:1572" ph="..." />
+            <marker date="1506946914173" expanded="true" signature="1786:2056" ph="..." />
+            <marker date="1506946914173" expanded="true" signature="2077:2376" ph="..." />
+            <marker date="1506946914173" expanded="true" signature="2446:2475" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="39" column="47" lean-forward="false" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>

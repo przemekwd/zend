@@ -17,20 +17,39 @@ class ArtistController extends AbstractActionController
 
     public function indexAction()
     {
+        $filter = $this->params()->fromPost('filter');
+        $search = $this->params()->fromPost('search');
+
         return new ViewModel([
-            'artists' => $this->table->fetchAll()
+            'artists' => $this->table->fetchAll($filter, $search),
+            'search' => $search,
         ]);
     }
 
     public function addAction()
     {
+
     }
 
     public function editAction()
     {
+
+    }
+
+    public function showAction()
+    {
+
     }
 
     public function deleteAction()
     {
+        $id = (int) $this->params()->fromRoute('id', 0);
+        if (!$id) {
+            return $this->redirect()->toRoute('artist');
+        }
+
+        $this->table->deleteArtist($id);
+
+        return $this->redirect()->toRoute('artist');
     }
 }

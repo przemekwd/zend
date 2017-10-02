@@ -3,67 +3,74 @@
 $title = 'Lista artystów';
 $this->headTitle($title);
 ?>
-<h1>
-    <div class="pull-left">
-        <i class="material-icons" style="font-size:48px;">recent_actors</i>
-        <span><?= $this->escapeHtml($title) ?></span>
-    </div>
-</h1>
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th></th>
-            <th>Nazwa / Imię i nazwisko</th>
-            <th>Data urodzenia / Rok powstania</th>
-            <th>Państwo</th>
-            <th>Akcje</th>
-        </tr>
-    </thead>
-    <tbody>
-    <?php foreach ($this->artists as $artist): ?>
-        <tr>
-            <td>
-                <?php if(!empty($artist->band)): ?>
-                <i class="material-icons">people_outline</i>
-                <?php else: ?>
-                <i class="material-icons">person_outline</i>
-                <?php endif; ?>
-            </td>
-            <td>
-                <?php if($artist->name != null): ?>
-                    <?= $artist->name ?>
-                <?php else: ?>
-                    <?= $artist->firstname . $artist->lastname ?>
-                <?php endif; ?>
-            </td>
-            <td>
-                <?php if(!empty($artist->band)): ?>
-                {{ \Carbon\Carbon::parse($artist->birth_date)->format('Y') }}
-                <?php else: ?>
-                {{ \Carbon\Carbon::parse($artist->birth_date)->format('d-m-Y') }}
-                <?php endif; ?>
-            </td>
-            <td><?= $artist->country ?></td>
-            <td>
-
-                <a href="{{ route('artist.show', ['id' => $artist->id]) }}" class="btn btn-info" role="button">
-                    <i class="material-icons">info_outline</i>
-                    Usuń
-                </a>
-                <a href="{{ route('artist.edit', ['id' => $artist->id]) }}" class="btn btn-warning" role="button">
-                    <i class="material-icons">create</i>
-                    Edytuj
-                </a>
-                <button class="btn btn-danger" type="submit" role="button">
-                    <i class="material-icons">highlight_off</i>
-                    Pokaż
-                </button>
-
-            </td>
-        </tr>
-    <?php endforeach; ?>
-    </tbody>
-</table>
+<form action="<?= $this->url('artist') ?>" method="POST">
+    <h1>
+        <div class="pull-left">
+            <i class="material-icons" style="font-size:48px;">recent_actors</i>
+            <span><?= $this->escapeHtml($title) ?></span>
+        </div>
+        <div class="pull-right form-inline" style="font-size: 30px;">
+            <input type="text" class="form-inline" name="search" value="<?= $search ?>"/>
+            <button class="btn form-inline btn-white" type="submit">
+                <i class="material-icons" style="font-size:48px;">pageview</i>
+            </button>
+        </div>
+    </h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th>
+                    Nazwa / Imię i nazwisko
+                    <button class="btn btn-default filter" type="submit" name="filter" value="name ASC,lastname ASC"><i class="material-icons" title="ASC">arrow_drop_up</i></button>
+                    <button class="btn btn-default filter" type="submit" name="filter" value="name DESC,lastname DESC"><i class="material-icons" title="DESC">arrow_drop_down</i></button>
+                </th>
+                <th>Data urodzenia / Rok powstania</th>
+                <th>Państwo</th>
+                <th>Akcje</th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($this->artists as $artist): ?>
+            <tr>
+                <td>
+                    <?php if(!empty($artist->band)): ?>
+                    <i class="material-icons">people_outline</i>
+                    <?php else: ?>
+                    <i class="material-icons">person_outline</i>
+                    <?php endif; ?>
+                </td>
+                <td>
+                    <?php if($artist->name != null): ?>
+                        <?= $artist->name ?>
+                    <?php else: ?>
+                        <?= $artist->firstname . ' ' . $artist->lastname ?>
+                    <?php endif; ?>
+                </td>
+                <td>
+                    <?php if(!empty($artist->band)): ?>
+                        <?= date('Y', strtotime($artist->birth_date)) ?>
+                    <?php else: ?>
+                        <?= date('d-m-Y', strtotime($artist->birth_date)) ?>
+                    <?php endif; ?>
+                </td>
+                <td><?= $artist->country ?></td>
+                <td>
+                    <a href="<?= $this->url('artist', ['action' => 'show', 'id' => $artist->id]) ?>" class="btn btn-info" role="button">
+                        <i class="material-icons">info_outline</i>Pokaż
+                    </a>
+                    <a href="<?= $this->url('artist', ['action' => 'edit', 'id' => $artist->id]) ?>" class="btn btn-warning" role="button">
+                        <i class="material-icons">create</i>Edytuj
+                    </a>
+                    <a href="<?= $this->url('artist', ['action' => 'delete', 'id' => $artist->id]) ?>" class="btn btn-danger" role="button">
+                        <i class="material-icons">info_outline</i>Usuń
+                    </a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+</form>
 
 <a href="<?= $this->url('home') ?>" class="btn btn-default" role="button" aria-label="Left Align">
     <i class="material-icons">undo</i>

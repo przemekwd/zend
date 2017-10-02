@@ -2,6 +2,9 @@
 
 namespace Album\Model;
 
+use Zend\Db\Sql\Predicate\Like;
+use Zend\Db\Sql\Predicate\PredicateSet;
+use Zend\Db\Sql\Select;
 use Zend\Db\TableGateway\TableGateway;
 
 class ArtistTable
@@ -13,9 +16,29 @@ class ArtistTable
         $this->tableGateway = $tableGateway;
     }
 
-    public function fetchAll()
+    public function fetchAll($filter, $search)
     {
-        $resultSet = $this->tableGateway->select();
+        $resultSet = $this->tableGateway->select(function (Select $select) use ($filter, $search) {
+            if ($search) {
+                $select->where([
+                    new PredicateSet(
+                        [
+                            new Like('name', '%' . $search . '%'),
+                            new Like('lastname', '%' . $search . '%'),
+                            new Like('firstname', '%' . $search . '%'),
+                        ],
+                        PredicateSet::COMBINED_BY_OR
+                    ),
+                ]);
+            }
+            if ($filter) {
+                $filter = explode(',', $filter);
+                foreach ($filter as $f) {
+                    $select->order($f);
+                }
+            }
+        });
+
         return $resultSet;
     }
 
