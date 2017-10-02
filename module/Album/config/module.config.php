@@ -22,6 +22,20 @@ return [
                     ],
                 ],
             ],
+            'artist' => [
+                'type'    => Segment::class,
+                'options' => [
+                    'route' => '/artist[/:action[/:id]]',
+                    'constraints' => [
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                        'id'     => '[0-9]+',
+                    ],
+                    'defaults' => [
+                        'controller' => Controller\ArtistController::class,
+                        'action'     => 'index',
+                    ],
+                ],
+            ],
         ],
     ],
     'view_manager' => [

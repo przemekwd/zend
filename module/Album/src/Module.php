@@ -27,6 +27,16 @@ class Module implements ConfigProviderInterface
                     $resultSetPrototype->setArrayObjectPrototype(new Model\Album());
                     return new TableGateway('album', $dbAdapter, null, $resultSetPrototype);
                 },
+                Model\ArtistTable::class => function($container) {
+                    $tableGateway = $container->get(Model\ArtistTableGateway::class);
+                    return new Model\ArtistTable($tableGateway);
+                },
+                Model\ArtistTableGateway::class => function ($container) {
+                    $dbAdapter = $container->get(AdapterInterface::class);
+                    $resultSetPrototype = new ResultSet();
+                    $resultSetPrototype->setArrayObjectPrototype(new Model\Artist());
+                    return new TableGateway('artist', $dbAdapter, null, $resultSetPrototype);
+                },
             ],
         ];
     }
@@ -37,7 +47,12 @@ class Module implements ConfigProviderInterface
             'factories' => [
                 Controller\AlbumController::class => function($container) {
                     return new Controller\AlbumController(
-                            $container->get(Model\AlbumTable::class)
+                        $container->get(Model\AlbumTable::class)
+                    );
+                },
+                Controller\ArtistController::class => function($container) {
+                    return new Controller\ArtistController(
+                        $container->get(Model\ArtistTable::class)
                     );
                 }
             ],
