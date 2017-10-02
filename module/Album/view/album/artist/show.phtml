@@ -1,0 +1,55 @@
+<h1>
+    <i class="material-icons" style="font-size:38px;">account_box</i>
+    <span>
+        <?php if(!empty($artist->name)): ?>
+            <?= $artist->name ?>
+        <?php else: ?>
+            <?= $artist->firstname . ' ' . $artist->lastname ?>
+        <?php endif; ?>
+    </span>
+</h1>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3>
+            <?php if(!empty($artist->band)): ?>
+                <i class="material-icons">people_outline</i>
+            <?php else: ?>
+                <i class="material-icons">person_outline</i>
+            <?php endif; ?>
+            Informacje
+        </h3>
+    </div>
+    <div class="panel-body">
+        <table class="table-condensed">
+            <tbody>
+            <tr>
+                <td class="strong">Data urodzenia / utworzenia</td>
+                <td>
+                    <?php if($artist->name): ?>
+                        <?= date('Y', strtotime($artist->birth_date)) ?>
+                    <?php else: ?>
+                        <?= date( 'd-m-Y', strtotime($artist->birth_date)) ?>
+                    <?php endif; ?>
+                </td>
+            </tr>
+            <tr>
+                <td class="strong">Państwo</td>
+                <td><?= $artist->country ?></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<a href="<?=  $this->url('artist', ['action' => 'edit', 'id' => $artist->id]) ?>" class="btn btn-warning pull-right" role="button">
+    Edytuj artystę
+</a>
+
+<a href="<?=  $this->url('artist', ['action' => 'delete', 'id' => $artist->id]) ?>" class="btn btn-danger pull-right" role="button">
+    Usuń artystę
+</a>
+
+<a href="<?= $this->url('artist') ?>" class="btn btn-default" role="button" aria-label="Left Align">
+    <i class="material-icons">undo</i> Powrót
+</a>
